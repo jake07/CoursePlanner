@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping(value = "/")
 public class DemoController {
 
     private JSCompilerImpl jsCompiler;
@@ -26,7 +27,7 @@ public class DemoController {
         jsCompiler = new JSCompilerImpl();
     }
 
-    @RequestMapping(value = "/")
+    @RequestMapping(value = "/index")
     public String index(Map<String, Object> model) throws Exception {
         List<Comment> comments = commentService.getComments();
         String commentBox = jsCompiler.renderCommentBox(comments);

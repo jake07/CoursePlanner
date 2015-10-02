@@ -28,6 +28,7 @@ public class JSCompilerImpl {
     public String renderCommentBox(List<Comment> comments) {
         try {
             Object html = nashorn.invokeFunction("renderServer", comments);
+            System.out.println(String.valueOf(html)); //log
             return String.valueOf(html);
         }
         catch (Exception e) {
