@@ -1,4 +1,4 @@
-package com.hbd;
+package com.CoursePlanner;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
