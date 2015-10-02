@@ -1,9 +1,9 @@
-package com.CoursePlanner.services;
+package courseplanner.services;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.CoursePlanner.model.Comment;
+import courseplanner.model.Comment;
 import org.springframework.stereotype.Service;
 
 @Service

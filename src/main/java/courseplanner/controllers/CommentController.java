@@ -1,9 +1,9 @@
-package com.CoursePlanner.controllers;
+package courseplanner.controllers;
 
 import java.util.List;
 
-import com.CoursePlanner.model.Comment;
-import com.CoursePlanner.services.CommentService;
+import courseplanner.model.Comment;
+import courseplanner.services.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

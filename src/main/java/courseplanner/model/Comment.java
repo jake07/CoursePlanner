@@ -1,4 +1,4 @@
-package com.CoursePlanner.model;
+package courseplanner.model;
 
 public class Comment {
     private String author;
