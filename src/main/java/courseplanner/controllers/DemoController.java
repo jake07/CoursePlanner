@@ -30,7 +30,7 @@ public class DemoController {
                 .loadFromClassPath("js/commentBox-babel.js");
     }
 
-    @RequestMapping(value = "/")
+    @RequestMapping(value = "/index")
     public String index(Map<String, Object> model) throws Exception {
         List<Comment> comments = commentService.getComments();
         //String commentBox = jsCompiler.invokeFunction("renderServer", String::valueOf, comments);
